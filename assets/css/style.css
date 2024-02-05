@@ -17,7 +17,12 @@
 }
 
 body{
-    background: green;
+    background: linear-gradient(
+      to bottom,
+      #009688 0,
+      #009688 15%,
+      #F3EEEA 15%,
+      #F3EEEA 100%)
 }
 
 img{
@@ -70,9 +75,14 @@ img{
   background-color: white;
 }
 
+/* TOP COL USER */
+
+
+/* /TOP COL USER */
 
 /* TOP COL MESSAGE */
-.message .top-message{
+.message .top-message,
+.user .top-col-user{
   height: 70px;
   justify-content: space-between;
   background-color: var(--color-menu);
@@ -92,17 +102,21 @@ img{
   height: 70px;
 }
 
-.user-section img{
+.user-section img,
+.top-user-image img{
   border-radius: 50%;
   height: 70%;
   margin: 10px;
 }
 
-.row .message .user-strumental{
+.row .message .user-strumental,
+.top-col-user .top-col-strumental
+{
 display: block;
 }
 
-.user-strumental i{
+.user-strumental i,
+.top-user-strumental i{
   margin-top: 23px; 
 }
 /* TOP COL MESSAGE */
