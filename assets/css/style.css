@@ -4,6 +4,8 @@
   --green: #009688;
   --light-blue: #8EDAFC;
   --beige: #F3EEEA;
+  --color-text: #767F81;
+  --color-menu: #EAEAEA;
 }
 
 *{
@@ -24,6 +26,21 @@ img{
   display: flex;
 }
 
+.text-xs{
+  font-size: 0.8rem;
+}
+
+.text-l{
+  font-size: 1.5rem;
+}
+
+.text-color{
+  color: var(--color-text);
+}
+
+.m-right-m{
+  margin-right: 20px;
+}
 /* body */
 
 .row{
@@ -42,8 +59,13 @@ img{
   width: 70%;
   background-color: white;
 }
+
+
+/* COL MESSAGE */
 .message .top-message{
   height: 70px;
+  justify-content: space-between;
+  background-color: var(--color-menu);
 }
 
 .user-section .user-name{
@@ -59,12 +81,27 @@ img{
 .message .bottom-message{
   height: 70px;
 }
+
+.user-section img{
+  border-radius: 50%;
+  height: 70%;
+  margin: 10px;
+}
+
+.row .message .user-strumental{
+display: block;
+}
+
+
+
+.bottom-message{
+  background-color: var(--color-menu);
+}
 /* /BODY */
 
 /* TABLET MEDIA */
 
-@media screen and (max-width: 992px ){
-
+@media screen and (max-width: 992px ) {
   .row{
     width: 100vw;
     height: 100vh;
@@ -78,7 +115,12 @@ img{
   .row .message{
     width: 90vw;
   }
+
+  .row .message .user-strumental{
+    display: block;
+  }
 }
+
 /* /TABLET MEDIA */
 
 
@@ -93,5 +135,9 @@ img{
     width: 100vw;
   }
 }
+
+  .row  .message .user-strumental{
+    display: none;
+  }
 
 /* /MOBILE MEDIA */
