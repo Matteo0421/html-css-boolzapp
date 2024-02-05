@@ -1,0 +1,97 @@
+:root{
+  --font-family: 'Lato', sans-serif;
+  --grey: #DBDBD3;
+  --green: #009688;
+  --light-blue: #8EDAFC;
+  --beige: #F3EEEA;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: green;
+}
+
+img{
+  max-width: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+/* body */
+
+.row{
+  display: flex;
+  height: 80vh;
+  background-color: red;
+  width: 80vw;
+  margin: 5% 10%;
+}
+
+.row .user{
+  width: 30%;
+}
+
+.row .message{
+  width: 70%;
+  background-color: white;
+}
+.message .top-message{
+  height: 70px;
+}
+
+.user-section .user-name{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message .main-message{
+  height: calc(100% - 140px);
+  overflow: scroll;
+}
+
+.message .bottom-message{
+  height: 70px;
+}
+/* /BODY */
+
+/* TABLET MEDIA */
+
+@media screen and (max-width: 992px ){
+
+  .row{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .row .user{
+    width: 10vw;
+  }
+
+  .row .message{
+    width: 90vw;
+  }
+}
+/* /TABLET MEDIA */
+
+
+/* MOBILE MEDIA */
+
+@media screen and (max-width: 542px){
+
+  .row .user{
+    width: 0%;
+  }
+  .row .message{
+    width: 100vw;
+  }
+}
+
+/* /MOBILE MEDIA */
