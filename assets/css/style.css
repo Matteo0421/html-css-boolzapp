@@ -60,6 +60,17 @@ img{
   margin-left: 10px;
 }
 
+.p-medium{
+  padding: 10px;
+}
+.margin-m{
+  margin: 10px;
+}
+
+.m-bottom-xs{
+  margin-bottom: 5px;
+}
+
 /* body */
 
 .row{
@@ -111,6 +122,49 @@ img{
 
 /* /TOP NOTIFICATION */
 
+
+/* COL USER FULL-LIST-USER */
+  .full-list-user{
+    background-color: white;
+  }
+
+/* SEARCH USER */
+  .search-user{
+    height: 50px;
+    padding: 8px;
+  }
+
+  .search-iteam i{
+    background-color: white;
+    padding: 10px;
+  }
+
+  .search-user .search-bar{
+    width: 90%;
+  }
+
+  .search-user .search-bar input{
+    width: 100%;
+    border: white;
+  }
+
+  /* /SEARCH USER */
+
+  /* LIST USER */
+
+  .box-user{
+    height: 80px;
+  }
+
+  .description-user span{
+    color: var(--color-items);
+  }
+
+
+  /* /LIST USER */
+
+/* /COL USER FULL-LIST-USER */
+
 /* TOP COL MESSAGE */
 .message .top-message,
 .user .top-col-user{
@@ -134,7 +188,8 @@ img{
 }
 
 .user-section img,
-.top-user-image img{
+.top-user-image img,
+.box-user img{
   border-radius: 50%;
   height: 70%;
   margin: 10px;
@@ -229,7 +284,8 @@ display: block;
   }
 
   .user .top-user-strumental,
-  .user .top-notification{
+  .user .top-notification,
+  .search-user{
     display: none;
   }
 
