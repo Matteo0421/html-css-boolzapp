@@ -17,12 +17,14 @@
 }
 
 body{
+  height: 100vh;
     background: linear-gradient(
       to bottom,
       #009688 0,
       #009688 15%,
       #F3EEEA 15%,
       #F3EEEA 100%)
+
 }
 
 img{
