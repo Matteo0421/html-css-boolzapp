@@ -56,6 +56,10 @@ img{
   margin-right: 20px;
 }
 
+.m-left-xs{
+  margin-left: 10px;
+}
+
 /* body */
 
 .row{
@@ -79,10 +83,33 @@ img{
   background-color: white;
 }
 
-/* TOP COL USER */
+/* TOP NOTIFICATION */
 
+.top-notification{
+  height: 70px;
+  background-color: var(--light-blue);
+}
 
-/* /TOP COL USER */
+.ring-items{
+  padding: 10px;
+}
+
+.ring-items i{
+  border-radius: 50%;
+  padding: 12px;
+  background-color: white;
+  color: var(--light-blue);
+}
+
+.text-notifications{
+  margin-top: 15px;
+}
+
+.text-notifications a{
+  color: #507687;
+}
+
+/* /TOP NOTIFICATION */
 
 /* TOP COL MESSAGE */
 .message .top-message,
@@ -201,6 +228,11 @@ display: block;
     width: 10vw;
   }
 
+  .user .top-user-strumental,
+  .user .top-notification{
+    display: none;
+  }
+
   .row .message{
     width: 90vw;
   }
@@ -208,6 +240,7 @@ display: block;
   .row .message .user-strumental{
     display: block;
   }
+
 }
 
 /* /TABLET MEDIA */
