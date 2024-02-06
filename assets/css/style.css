@@ -91,7 +91,6 @@ img{
 
 .row .message{
   width: 70%;
-  background-color: white;
 }
 
 /* TOP NOTIFICATION */
@@ -158,6 +157,11 @@ img{
 
   .description-user span{
     color: var(--color-items);
+  }
+
+  .full-list-user{
+    height: calc(100% - 140px);
+    overflow: scroll;
   }
 
 
